@@ -7,7 +7,7 @@ import s from './styles.scss';
 const App = () => (
   <div>
     <PrimaryButton> here here from new scope </PrimaryButton>
-        <View className={s.view}>I am just j </View>
+    <View className={s.view}>I am just j   </View>
   </div>
 );
 
