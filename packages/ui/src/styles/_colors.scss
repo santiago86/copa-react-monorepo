@@ -1,0 +1,20 @@
+//colors
+$text: #091e42;
+$primary: rgb(0, 101, 255);
+$secondary: rgb(0, 42, 112);
+$white: #fff;
+
+$colors: (
+  text: $text,
+  primary: $primary,
+  secondary: $secondary,
+  white: $white
+);
+
+/* You can do `import colors from 'colors.scss'` in your js code to get variables in JSON format */
+
+:export {
+  @each $name, $color in $colors {
+    #{$name}: $color;
+  }
+}
